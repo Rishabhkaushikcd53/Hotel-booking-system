@@ -1,0 +1,18 @@
+Hi XYZ,
+
+I apprexcate your efforts on the recent PR ,after reviewing your code ,I suspect that there are some areas in which some enhancements are required before merging it the original code,I would 
+like to address those issues in this e-mail one of the first issue I detect was the security concerns because in this code passcodes should never be included in the database please ensure using
+bcrypt.hash() in the improved version and JWT should include proper expiration and refresh token mechanisms to prevent security loopholes.
+
+One of the other key loopholes in the code is error handling and validation your API lacks proper validation for ex:(missing fields in booking requests should return errors)
+Use a library like express-validator to enforce input validation.
+Add try-catch blocks to handle potential errors in async database operations.
+
+I think you should consider giving it another look and I hope you would ensure best practices for modularization and response formatting are allowed ,once you've made the required enhancement 
+provide a revised version of the PR.
+
+Feel free to reach out to me ,if you've any queries ,I am here to assist you and eagerly waiting for the updated version.
+
+Best wishes,
+Rishabh Kaushik
+Project Manager,\
