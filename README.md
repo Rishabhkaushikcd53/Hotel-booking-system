@@ -1,18 +1,38 @@
-🏨 Hotel Booking System
+# Hotel Booking Auth System
 
-This is a "full-stack hotel booking system" with authentication, booking management, and an admin panel. Users can register, log in, and book hotel rooms, while admins can manage bookings.
+This is a simple **Node.js + Express** backend for a hotel booking authentication system.
 
-Features
--  JWT Authentication (Login/Register)
--  Hotel Room Booking
--  Admin Panel (Manage bookings)
--  Secure Password Hashing (bcrypt.js)
--  RESTful API (Express.js & MongoDB)
+## Features:
+- **User Registration & Login** with JWT Authentication
+- **Room Booking System**
+- **Admin Panel** to View Bookings
 
-Tech Stack
-- Backend:Node.js, Express.js, MongoDB
-- Authentication: JWT, bcrypt.js
-- Database ORM: Mongoose
-- Deployment: (Add your deployment method if applicable)
+## Installation
 
-Project Structure
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/hotel-booking-auth.git
+   ```
+
+2. Install dependencies:
+   ```sh
+   cd hotel-booking-auth
+   npm install
+   ```
+
+3. Set up the `.env` file with your **MongoDB URI** and **JWT Secret**.
+
+4. Run the server:
+   ```sh
+   npm start
+   ```
+
+## API Endpoints
+
+- `POST /register` → Register a user
+- `POST /login` → Login and receive a JWT token
+- `POST /book` → Book a hotel room
+- `GET /admin/bookings` → View all bookings (admin only)
+
+## License
+MIT
